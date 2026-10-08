@@ -1,0 +1,134 @@
+/* Крок 1. Глобальне скидання та модель border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #051d3c;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #00aeff; 
+    line-height: 1.6; 
+    padding: 20px 0;
+}
+
+/* Крок 3.1. Контейнер-обгортка (.container) */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#page-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #33ccff;
+    text-align: center; 
+    margin-bottom: 25px;
+}
+
+.section-title {
+    margin-bottom: 15px;
+}
+
+/* Крок 3.2. Стилізація блоків-карток (.card) */
+.card {
+    background-color: #0a274d; /* Підібрано під темно-синій стиль сайту */
+    padding: 20px;
+    border: 1px solid #00e5ff33;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #33ccff;
+    margin-top: 10px;
+}
+
+.intro {
+    font-size: 1.15rem;
+    font-style: italic; 
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background-color: rgba(0, 229, 255, 0.3); 
+    color: #ffffff; 
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 229, 255, 0.3);
+}
+
+a {
+    color: #00ffff; 
+    text-decoration: none; 
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #00dbc5;
+    text-decoration: underline;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: square; 
+    color: #b3f9ff;
+}
+
+ol {
+    list-style-type: decimal-leading-zero; 
+    color: #b3f9ff;
+}
+
+/* Крок 3.3. Стилізація таблиці (table) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px 12px;
+    border: 1px solid #00e5ff55;
+    text-align: left;
+}
+
+th {
+    background-color: #0d386b;
+    color: #ffffff;
+}
+
+/* Крок 3.4. Стилізація зображень та галереї */
+.main-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 15px auto 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #00e5ff55;
+}
